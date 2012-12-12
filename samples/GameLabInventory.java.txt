@@ -1,0 +1,72 @@
+package gamelab.inventory;
+
+import gamelab.inventory.GameLabLogin;
+import gamelab.inventory.database.*;
+
+import java.net.UnknownHostException;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+/**
+* Driver class for GUI game lab inventory program.
+* 
+* @author Kevin Stich
+* <b>ALL CODE IS OWNED BY DePaul University.</b> <br />
+* This code is provided as a sample of Kevin's coding skills and is privately owned by the University.
+* @version 7.1.2
+* @since 3/7/10
+*
+*/
+public class GameLabInventory {
+	
+	/**
+	 * Boolean noting the logging status of this run.
+	 */
+	private static boolean logging = false;
+	
+	/**
+	 * Drives the GUI game lab inventory program. Detects the computer name from the System.<br>
+	 * Reads the system arguments to see if the program is to be run in logging mode.
+	 * 
+	 * @param	args	Array of String arguments passed from the JVM.
+	 */
+	public static void main(String[] args) throws UnknownHostException {
+		//Gets the computer name
+		String compName = System.getenv("COMPUTERNAME");
+		//Creates null object to be created based on logging variable
+		GameLabDBFront front = null;
+		//Tests arguments for the logging variable
+		try{
+			//Check all current and past logging variables
+			if((args[0].equals("log")||args[0].equals("Log")||args[0].equals("LOG")||
+					args[0].equals("debug")||args[0].equals("Debug")||args[0].equals("DEBUG"))) {
+				//This will execute if there is a valid logging argument passed
+				
+				//Debug mode is on
+				logging = true;
+				JOptionPane.showMessageDialog(null, "Log mode is running.", "Logging",
+						JOptionPane.ERROR_MESSAGE);
+			} else { 
+				//This will execute if there is an invalid logging argument passed
+				
+				//Debug mode is off
+				logging = false;
+			}
+		} catch(ArrayIndexOutOfBoundsException e) {
+			//This will execute if there are no arguments passed
+			
+			//Debug mode is off
+			logging = false;
+		} finally {
+			//Create the server interface with the set logging variable
+			front = new GameLabDBFront(logging, compName);
+		}
+		
+		//Create and modify status of login panel
+		GameLabLogin login = new GameLabLogin(front);
+		login.setVisible(true);
+		login.setDebug(logging);
+		login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

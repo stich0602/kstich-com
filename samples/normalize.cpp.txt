@@ -1,0 +1,78 @@
+/*
+Kevin Stich
+Programming Example
+Cartesian Vector Normalizing Code Test
+*/
+
+#include <cstdlib>
+#include <math.h>
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+typedef struct Vect {//Vector struct for positions
+   float x;
+   float y;
+   float z;
+} Vect_t;
+
+void normalize(Vect_t&);
+
+int main() {
+   int i;
+   float j;
+   clock_t start, end;
+   Vect_t tempVec;
+
+   cout << "Random numbers are constrained to +/-50" << endl;
+
+   cout << "Calculation will proceed after the break" << endl;
+   
+   //Pause for display
+	system("PAUSE");
+
+   cout << "Executing..." << endl;
+   
+   srand(time(NULL));
+
+   //Get the current clock before it starts calculating
+   start = clock();
+
+   //Ten million calculations
+   for(i=0; i<10000000; i++) {
+      //Generate and set X
+      j = ((100*((float)rand()/RAND_MAX))-50);
+      tempVec.x = j;
+      //Generate and set Y
+      j = ((100*((float)rand()/RAND_MAX))-50);
+      tempVec.y = j;
+      //Generate and set Z
+      j = ((100*((float)rand()/RAND_MAX))-50);
+      tempVec.z = j;
+      //Normalize our random vector
+      normalize(tempVec);
+   }
+
+   //Get the current clock after it's finished calculating
+   end = clock();
+
+   //Print the time it took to run the algorithm
+   cout << "Time for 10000000 normalizations: " << (double)(end-start)/CLOCKS_PER_SEC << "s\n\n";
+
+   //Pause for display
+   system("PAUSE");
+
+   return 0;
+}
+
+//Method that normalizes a Vect_t struct in place
+void normalize(Vect_t &vector) {
+   //Calculate the total distance
+   float dist = sqrt((vector.x * vector.x) +
+                     (vector.y * vector.y) +
+                     (vector.z * vector.z));
+   //Normalize each side in place
+   vector.x /= dist;
+   vector.y /= dist;
+   vector.z /= dist;
+}
