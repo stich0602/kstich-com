@@ -7,263 +7,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <style>
-
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-    body {
-      padding-bottom: 30px;
-      color: #5a5a5a;
-    }
-
-
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 15;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
-
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
-
-    .carousel .container {
-      position: relative;
-      z-index: 10;
-    }
-
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 1000;
-    }
-
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-
-
-
-    /* PORTFOLIO CONTENT
-    -------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-    .portfolio .span3 {
-      text-align: center;
-    }
-    .portfolio h2 {
-      font-weight: normal;
-    }
-    .portfolio .span3 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-
-    /* Featurettes
-    ------------------------- */
-
-    .featurette-divider {
-      margin: 30px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
-
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    /* Thin out the portfolio headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-
-
-
-    /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <style type="text/css">
+      .featurette-divider {
+        margin: 30px 0;
       }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
+      .container .sublets {
+        text-align: center;
       }
-
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
-
-
-    @media (max-width: 767px) {
-
-      .navbar-inner {
-        margin: -20px;
-      }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        height: 500px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
-
-      .portfolio .span3 + .span3 {
-        margin-top: 40px;
-      }
-
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
-    }
     </style>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="ico/favicon.png">
   </head>
   <body>
     <script type="text/javascript">
@@ -277,42 +35,56 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    <!-- NAVBAR
-    ================================================== -->
+
     <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
-        <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">Portfolio of Kevin Stich</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed within .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
-              <ul class="nav">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Portfolio of Kevin Stich</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
                 <li class="active"><a href="mailto:kevin@kstich.com">Email</a></li>
               </ul>
-            </div><!-- /.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
-
-    <!-- Carousel
-    ================================================== -->
     <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="item active">
+          <img src="img/tyrant_unleashed.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Tyrant Unleashed</h1>
+              <p class="lead">Tyrant Unleashed is a compelling combination of strategy and fast-paced battles. Create a deck of noble Imperials, ruthless Raiders, menacing Bloodthirsty, cunning Righteous and destructive Xeno to annihilate other players!</p>
+              <a class="btn btn-lg btn-danger" href="https://itunes.apple.com/us/app/tyrant-unleashed/id657628191?mt=8">Play on iOS &raquo;</a>
+              <a class="btn btn-lg btn-danger" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.tyrant.google">Play on Android &raquo;</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
           <img src="img/tyrant.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Tyrant</h1>
               <p class="lead">Tyrant is an MMO CCG with interactive battles! Gather your forces to defend against a massive onslaught from the traitorous Imperials, brutal Raiders, vile Bloodthirsty beasts zealous Righteous defenders, and the mysterious Xenos. Gather hundreds of cards and build a killer deck to take down other players!</p>
-              <a class="btn btn-large" href="https://apps.facebook.com/tyrantgame/">Play on Facebook &raquo;</a>
-              <a class="btn btn-large" href="http://kongregate.com/games/synapticon/tyrant">Play on Kongregate &raquo;</a>
+              <a class="btn btn-lg btn-danger" href="https://apps.facebook.com/tyrantgame/">Play on Facebook &raquo;</a>
+              <a class="btn btn-lg btn-danger" href="http://kongregate.com/games/synapticon/tyrant">Play on Kongregate &raquo;</a>
             </div>
           </div>
         </div>
@@ -322,8 +94,8 @@
             <div class="carousel-caption">
               <h1>Skyshard Heroes</h1>
               <p class="lead">Build up your hometown in the kingdom of Syrellia! Use your choice of Hero to command units and assault the enemy. Band together with other heroes to takeover conquest lands and possibly even the Bastion itself!</p>
-              <a class="btn btn-large" href="https://apps.facebook.com/skyshard/">Play on Facebook &raquo;</a>
-              <a class="btn btn-large" href="http://kongregate.com/games/synapticon/skyshard-heroes">Play on Kongregate &raquo;</a>
+              <a class="btn btn-lg btn-danger" href="https://apps.facebook.com/skyshard/">Play on Facebook &raquo;</a>
+              <a class="btn btn-lg btn-danger" href="http://kongregate.com/games/synapticon/skyshard-heroes">Play on Kongregate &raquo;</a>
             </div>
           </div>
         </div>
@@ -333,88 +105,62 @@
             <div class="carousel-caption">
               <h1>War Metal</h1>
               <p class="lead">War Metal is a Facebook RPG that puts you in charge as commander of a high-tech army. Build your force with devastating War Mechs, insatiable Bloodthirsty beasts, or a full-on Aerial squadron. Team up with hundreds of allies against massive Bosses and earn powerful rewards!</p>
-              <a class="btn btn-large" href="https://apps.facebook.com/war_machine/">Play on Facebook &raquo;</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/redshift.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Redshift</h1>
-              <p class="lead">Redshift is a Sci-Fi MMORPG where you can explore the galaxy and battle players in real-time! Mine from asteroids, craft epic weapons, and build up the most powerful Battleship ever seen!</p>
-              <a class="btn btn-large" href="https://apps.facebook.com/redshift/">Play on Facebook &raquo;</a>
+              <a class="btn btn-lg btn-danger" href="https://apps.facebook.com/war_machine/">Play on Facebook &raquo;</a>
             </div>
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
-    <!-- Portfolio messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></span></a>
+    </div>
 
     <div class="container portfolio">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span3">
-          <img class="img-circle" src="img/phelps.jpg">
+      <div class="row sublets">
+        <div class="col-md-3">
+          <img class="img-rounded" src="img/phelps.jpg">
           <h2>Me</h2>
           <p>My name is Kevin Stich and I'm a software developer working for <a href="http://synapse-games.com">Synapse Games</a>.  I work primarily in PHP, javascript, and MYSQL developing for the Facebook and Kongregate platforms.</p>
           <p>
-            <a class="btn btn-primary" href="https://www.facebook.com/stich0602">Facebook</a>
-            <a class="btn btn-primary" href="https://twitter.com/stich0602">Twitter</a>
-            <a class="btn btn-primary" href="http://www.linkedin.com/in/kevinstich/">Linked In</a>
+            <a class="btn btn-info" href="https://www.facebook.com/stich0602">Facebook</a>
+            <a class="btn btn-info" href="https://twitter.com/stich0602">Twitter</a>
+            <a class="btn btn-info" href="http://www.linkedin.com/in/kevinstich/">LinkedIn</a>
           </p>
-        </div><!-- /.span3 -->
-        <div class="span3">
-          <img class="img-circle" src="img/horses.jpg">
+        </div>
+        <div class="col-md-3">
+          <img class="img-rounded" src="img/horses.jpg">
           <h2>Resumé</h2>
           <p>Programming became my passion early on when tweaking my favorite PC games to play in a way that I felt was more fun. It has been what I've seen myself doing for the rest of my life, be it in games, sites or apps.</p>
           <p>
-            <a class="btn btn-primary" href="docs/Resume.pdf">Resume</a>
+            <a class="btn btn-info" href="docs/Resume.pdf">Resume</a>
           </p>
-        </div><!-- /.span3 -->
-        <div class="span3">
-          <img class="img-circle" src="img/bench.jpg">
+        </div>
+        <div class="col-md-3">
+          <img class="img-rounded" src="img/bench.jpg">
           <h2>Thoughts</h2>
-          <p>My thoughts on technology, games, politics and more will be posted alongside Martin Diamond's on our tumblr, teccdecc.</p>
+          <p>My thoughts on technology, games, politics and more will be posted alongside Martin Diamond's on our site, New Lines.</p>
           <p>
-            <a class="btn btn-primary" href="http://teccdecc.tumblr.com/">Blog</a>
+            <a class="btn btn-info" href="http://newlin.es/">Blog</a>
           </p>
-        </div><!-- /.span3 -->
-        <div class="span3">
-          <img class="img-circle" src="img/city.jpg">
+        </div>
+        <div class="col-md-3">
+          <img class="img-rounded" src="img/city.jpg">
           <h2>Photography</h2>
-          <p>When I'm not in school or working, I enjoy being together with friends and family.  I enjoy games of all kinds, photography and music in my few hours of spare time.</p>
+          <p>When I'm not working, I enjoy being together with friends and family.  I enjoy games of all kinds, photography and music in my few hours of spare time.</p>
           <p>
-            <a class="btn btn-primary" href="http://stich0602.shutterfly.com/">Photos</a>
+            <a class="btn btn-info" href="http://stich0602.shutterfly.com/">Photos</a>
           </p>
-        </div><!-- /.span3 -->
-      </div><!-- /.row -->
+        </div>
+      </div>
 
       <hr class="featurette-divider">
 
-      <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; Kevin Stich</p>
       </footer>
+    </div>
 
-    </div><!-- /.container -->
-
-    <!-- Load javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
       !function ($) {
         $(function(){
