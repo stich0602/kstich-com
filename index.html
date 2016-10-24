@@ -8,13 +8,73 @@
     <meta name="author" content="">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
     <style type="text/css">
-      .featurette-divider {
-        margin: 30px 0;
+      body {
+        background-color: #f4f4f4;
       }
-      .container .sublets {
-        text-align: center;
+      .featurette-divider {
+        margin: 10px 0;
+      }
+
+      .game, .bio {
+        background-color: #ffffff;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important
+      }
+      .bio {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .navbar-wrapper {
+        margin-top: 60px;
+      }
+      .imgwrapper {
+        margin-left: 5%;
+        width: 90%;
+      }
+
+      .btn {
+        color: #f1f1f1;
+        border-color: #333;
+      }
+      .btn-ios {
+        color: #ffffff;
+        background-color: #2f6ce3;
+      }
+      .btn-ios:hover {
+        border-color: #2f6ce3;
+      }
+      .btn-play {
+        color: #ffffff;
+        background-color: #3692b2;
+      }
+      .btn-play:hover {
+        border-color: #3692b2;
+      }
+      .btn-kong {
+        color: #ffffff;
+        background-color: #e4141e;
+      }
+      .btn-kong:hover {
+        border-color: #e4141e;
+      }
+      .btn-amazon {
+        color: #ffffff;
+        background-color: #f49648;
+      }
+      .btn-amazon:hover {
+        border-color: #f49648;
+      }
+      .btn-steam {
+        color: #ffffff;
+        background-color: #24B4B4;
+      }
+      .btn-steam:hover {
+        border-color: #24B4B4;
       }
     </style>
 
@@ -38,7 +98,7 @@
 
     <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,7 +110,10 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="mailto:kevin@kstich.com">Email</a></li>
+                <li><a href="mailto:kevin@kstich.com">Email — kevin@kstich.com</a></li>
+                <li><a href="docs/Resume.pdf">Resume</a>
+                <li><a href="http://www.linkedin.com/in/kevinstich/">LinkedIn</a>
+                <li><a href="https://twitter.com/stich0602">Twitter</a>
               </ul>
             </div>
           </div>
@@ -59,108 +122,129 @@
     </div>
 
     <div class="container">
-      <div class="row sublets">
-        <div class="col-md-6">
-          <img class="img-rounded" src="img/city.jpg" alt="">
-          <h2>Animation Throwdown</h2>
-          <p class="lead text-left">
-            Featuring hundreds of your favorite characters and moments from your
-            favorite episodes of Family Guy, Bob's Burgers, Futurama, American Data, and
-            King of the Hill. Collect character cards, optimize your deck, and create new
-            combos as you fight in an epic card battle bacchanal.
-          </p>
-          <p>
-            <a class="btn btn-sm btn-danger" href="https://itunes.apple.com/us/app/animation-throwdown-quest/id1080816579?mt=8">Play on iOS &raquo;</a>
-            <a class="btn btn-sm btn-danger" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.throwdown.google">Play on Android &raquo;</a>
-          </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12 game">
+              <div class="game-header text-center">
+                <div class="imgwrapper">
+                  <img class="img-rounded img-responsive" src="img/animation_throwdown.jpg" alt="">
+                </div>
+                <h2>Animation Throwdown</h2>
+              </div>
+              <div class="game-text">
+                <p class="lead text-left">
+                  Featuring hundreds of your favorite characters and moments from your
+                  favorite episodes of Family Guy, Bob's Burgers, Futurama, American Data, and
+                  King of the Hill. Collect character cards, optimize your deck, and create new
+                  combos as you fight in an epic card battle bacchanal.
+                </p>
+              </div>
+              <div class="game-links text-center">
+                <a class="btn btn-sm btn-ios" href="https://itunes.apple.com/us/app/animation-throwdown-quest/id1080816579?mt=8">Play on iOS &raquo;</a>
+                <a class="btn btn-sm btn-play" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.throwdown.google">Play on Android &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-md-12 game">
+              <div class="game-header text-center">
+                <div class="imgwrapper">
+                  <img class="img-rounded img-responsive" src="img/tyrant_unleashed_2.jpg" alt="">
+                </div>
+                <h2>Tyrant Unleashed</h2>
+              </div>
+              <div class="game-text">
+                <p class="lead text-left">
+                  Tyrant Unleashed is a compelling combination of strategy and fast-paced battles.
+                  Create a deck of noble Imperials, ruthless Raiders, menacing Bloodthirsty,
+                  cunning Righteous and destructive Xeno to annihilate other players!
+                </p>
+              </div>
+              <div class="game-links text-center">
+                <a class="btn btn-sm btn-ios" href="https://itunes.apple.com/us/app/tyrant-unleashed/id657628191?mt=8">Play on iOS &raquo;</a>
+                <a class="btn btn-sm btn-play" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.tyrant.google">Play on Android &raquo;</a>
+                <a class="btn btn-sm btn-kong" href="https://www.kongregate.com/games/synapticon/tyrant-unleashed-web">Play on Kongregate &raquo;</a>
+                <a class="btn btn-sm btn-amazon" href="https://www.amazon.com/Kongregate-Tyrant-Unleashed/dp/B00GG45P5E">Play on Amazon &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-md-12 game">
+              <div class="game-header text-center">
+                <div class="imgwrapper">
+                  <img class="img-rounded img-responsive" src="img/spellstone.png" alt="">
+                </div>
+                <h2>Spellstone</h2>
+              </div>
+              <div class="game-text">
+                <p class="lead text-left">
+                  Spellstone is a fantasy card game with beautiful hand-drawn art and
+                  rich lore! Collect hundreds of striking cards to battle through a compelling
+                  story to unravel the mystery of the Void.
+                </p>
+              </div>
+              <div class="game-links text-center">
+                <a class="btn btn-sm btn-ios" href="https://itunes.apple.com/us/app/spellstone/id973182911?mt=8">Play on iOS &raquo;</a>
+                <a class="btn btn-sm btn-play" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.spellstone.google">Play on Android &raquo;</a>
+                <a class="btn btn-sm btn-kong" href="https://www.kongregate.com/games/synapticon/spellstone">Play on Kongregate &raquo;</a>
+                <a class="btn btn-sm btn-steam" href="http://store.steampowered.com/app/452230/">Play on Steam &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-md-12 game">
+              <div class="game-header text-center">
+                <div class="imgwrapper">
+                  <img class="img-rounded img-responsive" src="img/global_assault.jpg" alt="">
+                </div>
+                <h2>Global Assault</h2>
+              </div>
+              <div class="game-text">
+                <p class="lead text-left">
+                  Global Assault is a squad based RPG with brilliant 3D graphics!
+                  Upgrade your units and adventure around the globe completing epic battles.
+                  Take control of Havoc, rebuild your bases, and defeat the rebels!
+                </p>
+              </div>
+              <div class="game-links text-center">
+                <a class="btn btn-sm btn-ios" href="https://itunes.apple.com/us/app/global-assault/id924684629?mt=8">Play on iOS &raquo;</a>
+                <a class="btn btn-sm btn-play" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.globalassault.google">Play on Android &raquo;</a>
+                <a class="btn btn-sm btn-kong" href="https://www.kongregate.com/games/synapticon/global-assault">Play on Kongregate &raquo;</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img class="img-rounded" src="img/city.jpg" alt="">
-          <h2>Tyrant Unleashed</h2>
-          <p class="lead text-left">
-            Tyrant Unleashed is a compelling combination of strategy and fast-paced battles.
-            Create a deck of noble Imperials, ruthless Raiders, menacing Bloodthirsty,
-            cunning Righteous and destructive Xeno to annihilate other players!
-          </p>
-          <p>
-            <a class="btn btn-sm btn-danger" href="https://itunes.apple.com/us/app/tyrant-unleashed/id657628191?mt=8">Play on iOS &raquo;</a>
-            <a class="btn btn-sm btn-danger" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.tyrant.google">Play on Android &raquo;</a>
-          </p>
+
+        <div class="col-md-1">
         </div>
-      </div>
-      <div class="row sublets">
-        <div class="col-md-6">
-          <img class="img-rounded" src="img/city.jpg" alt="">
-          <h2>Spellstone</h2>
-          <p class="lead text-left">
-            Spellstone is a fantasy card game with beautiful hand-drawn art and
-            rich lore! Collect hundreds of striking cards to battle through a compelling
-            story to unravel the mystery of the Void.
-          </p>
-          <p>
-            <a class="btn btn-sm btn-danger" href="https://itunes.apple.com/us/app/spellstone/id973182911?mt=8">Play on iOS &raquo;</a>
-            <a class="btn btn-sm btn-danger" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.spellstone.google">Play on Android &raquo;</a>
-            <a class="btn btn-sm btn-danger" href="http://store.steampowered.com/app/452230/">Play on Steam &raquo;</a>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img class="img-rounded" src="img/city.jpg" alt="">
-            <h2>Global Assault</h2>
-            <p class="lead text-left">
-              Global Assault is a squad based RPG with brilliant 3D graphics!
-              Upgrade your units and adventure around the globe completing epic battles.
-              Take control of Havoc, rebuild your bases, and defeat the rebels!
-            </p>
-            <p>
-              <a class="btn btn-sm btn-danger" href="https://itunes.apple.com/us/app/global-assault/id924684629?mt=8">Play on iOS &raquo;</a>
-              <a class="btn btn-sm btn-danger" href="https://play.google.com/store/apps/details?id=com.kongregate.mobile.globalassault.google">Play on Android &raquo;</a>
-            </p>
+
+        <div class="col-md-3">
+          <div class="row" id="affixed" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+            <div class="bio">
+              <div class="game-header text-center">
+                <div class="imgwrapper">
+                  <img class="img-rounded img-responsive" src="img/phelps.jpg">
+                </div>
+              </div>
+              <hr class="featurette-divider" />
+              <div class="game-text">
+                <p class="text-left">
+                  Solution-focused programmer with experience leading teams from ideation
+                  through release and continued development. Skillful in creating reusable
+                  and custom software at significant scale. Capable of coordinating across
+                  multiple studios and development groups.
+                </p>
+              </div>
+              <div class="game-links text-center">
+                <a class="btn btn-sm btn-info" href="docs/Resume.pdf">Resume</a>
+                <a class="btn btn-sm btn-info" href="http://www.linkedin.com/in/kevinstich/">LinkedIn</a>
+                <a class="btn btn-sm btn-info" href="https://twitter.com/stich0602">Twitter</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="container portfolio">
-      <div class="row sublets">
-        <div class="col-md-4">
-          <img class="img-rounded" src="img/phelps.jpg">
-          <h2>Me</h2>
-          <p class="text-left">
-            My name is Kevin Stich and I'm a software developer working for
-            <a href="http://synapse-games.com">Synapse Games</a>.  I work primarily
-            in PHP, javascript, and MYSQL developing for the Facebook and Kongregate platforms.</p>
-          <p>
-            <a class="btn btn-info" href="https://www.facebook.com/stich0602">Facebook</a>
-            <a class="btn btn-info" href="https://twitter.com/stich0602">Twitter</a>
-            <a class="btn btn-info" href="http://www.linkedin.com/in/kevinstich/">LinkedIn</a>
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-rounded" src="img/horses.jpg">
-          <h2>Resumé</h2>
-          <p class="text-left">
-            Programming became my passion early on when tweaking my favorite PC games to
-            play in a way that I felt was more fun. It has been what I've seen myself doing
-            for the rest of my life, be it in games, sites or apps.
-          </p>
-          <p>
-            <a class="btn btn-info" href="docs/Resume.pdf">Resume</a>
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-rounded" src="img/city.jpg">
-          <h2>Photography</h2>
-          <p class="text-left">
-            When I'm not working, I enjoy being together with friends and family.  I enjoy
-            games of all kinds, photography and music in my few hours of spare time.
-          </p>
-          <p>
-            <a class="btn btn-info" href="http://stich0602.shutterfly.com/">Photos</a>
-          </p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
+    <div class="container">
+      <hr class="featurette-divider" />
       <footer>
         <p>&copy; Kevin Stich</p>
       </footer>
@@ -168,14 +252,5 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          $('#myCarousel').carousel({
-            interval: 7500
-          })
-        })
-      }(window.jQuery)
-    </script>
   </body>
 </html>
